@@ -1,7 +1,10 @@
 package org.example;
 
+import org.example.array.ArrayClass;
 import org.example.exercices.Exo1;
+import org.example.exercices.Exo2;
 import org.example.operator.Operator;
+import org.example.string.ChaineCaractere;
 import org.example.structure.Structure;
 import org.example.structure.Structure2;
 import org.example.variable.Variable;
@@ -22,6 +25,15 @@ public class Main {
         //Structure.getIfElseIfElse();
         //Structure.getSwitch();
        // Structure2.getBoucleFor();
-        Structure2.getBreakAndContinue();
+       // Structure2.getBreakAndContinue();
+
+      //  Exo1.getPhotocopiePrice();
+       // Exo2.getArray();
+      //  Exo2.solutionExo8();
+       // Exo2.solutionExo10();
+        //ChaineCaractere.getFormat();
+       // ArrayClass.getArray();
+        ArrayClass.getDoubleTab();
+
     }
 }
