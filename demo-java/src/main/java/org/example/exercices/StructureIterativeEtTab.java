@@ -1,5 +1,7 @@
 package org.example.exercices;
 
+import java.text.DecimalFormat;
+import java.util.Arrays;
 import java.util.Scanner;
 
 import static java.lang.Integer.parseInt;
@@ -52,60 +54,119 @@ public class StructureIterativeEtTab {
         do {
             System.out.println("Donnez moi le prix de votre article : ");
             choice = sc.next();
-            try
-            {
+            try {
                 int value = parseInt(choice);
 
-                if((value%10) != 0)
-                {
+                if ((value % 10) != 0) {
                     System.out.println("Prix incorrect, donnez moi le prix de votre article : ");
                     choice = sc.next();
-                }
-                else{
+                } else {
                     achats += value;
                 }
-            }catch(NumberFormatException e) {
-                if(choice.equals("exit"))
+            } catch (NumberFormatException e) {
+                if (choice.equals("exit"))
                     break;
                 else
                     System.out.println("Cette valeur n'est pas un chiffre, essaie encore !");
 
             }
-        }while(!choice.equals("exit"));
+        } while (!choice.equals("exit"));
 
         System.out.printf("Vous devez payer %d euros, combien me donnez-vous? ", achats);
 
         int sommeDonnee = sc.nextInt();
 
-        while (sommeDonnee < achats)
-        {
+        while (sommeDonnee < achats) {
             System.out.println("Vous ne m'avez pas donné assez, vous m'avez donné " + sommeDonnee + " euros. Veuillez ajouter de l'argent svp");
             int erreur = sc.nextInt();
             sommeDonnee = sommeDonnee + erreur;
         }
 
         int sommeDue = sommeDonnee - achats;
-        System.out.println("Je vous dois " + sommeDue + " euros" );
+        System.out.println("Je vous dois " + sommeDue + " euros");
 
-        while(sommeDue>=10)
-        {
+        while (sommeDue >= 10) {
             sommeDue -= 10;
             System.out.println("10 euros");
         }
-        while(sommeDue>=5)
-        {
+        while (sommeDue >= 5) {
             sommeDue -= 5;
             System.out.println("5 euros");
         }
-        while(sommeDue>=1)
-        {
+        while (sommeDue >= 1) {
             sommeDue -= 1;
             System.out.println("1 euros");
         }
     }
 
 
+    public static void completeArray() {
+        Scanner sc = new Scanner(System.in);
+        String answer;
+        float note;
+        float[] table = new float[20];
+
+        int i = 0;
+        do {
+            System.out.printf("Donnez moi la note n°%d à entrer dans le tableau ", i + 1);
+            answer = sc.next();
+            try {
+                note = Float.parseFloat(answer);
+
+                if (note <= 20 && note >= 0) {
+                    table[i] = note;
+                    i++;
+                }
+
+            } catch (NumberFormatException e) {
+                System.out.printf("Saisie incorrecte, donnez moi la note n°%d à entrer dans le tableau ", i + 1);
+            }
+        } while (i != 20);
+
+        System.out.println("Voici votre tableau de notes : " + Arrays.toString(table));
+
+        float somme = 0;
+
+        for (float number : table) {
+            somme += number;
+        }
+        float moyenne = somme / table.length;
+
+        DecimalFormat double_decimal = new DecimalFormat("#.##");
+        System.out.println("La moyenne de la classe est de " + double_decimal.format(moyenne));
+
+        double min = table[0];
+        double max = table[0];
+
+        for (int j = 1; j < table.length; j++) {
+            if (table[j] < min) {
+                min = table[j];
+            }
+            if (table[j] > max) {
+                max = table[j];
+            }
+        }
+
+        System.out.printf("La plus petite note de la classe est %s et la plus élevée est de %s", double_decimal.format(min), double_decimal.format(max));
+
+    }
 
 
 
+    public static void getDecalage()
+    {
+        char[] table = {'D', 'E', 'C', 'A', 'L', 'A', 'G', 'E'};
+
+        char temp;
+
+        System.out.println("Tableau avant traitement : " + Arrays.toString(table));
+
+        for (int i = 0; i < table.length-1; i++) {
+            temp = table[i];
+            table[i] = table[i+1];
+            table[i+1] = temp;
+        }
+
+        System.out.println(Arrays.toString(table));
+    }
 }
