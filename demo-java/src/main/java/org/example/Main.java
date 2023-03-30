@@ -3,6 +3,7 @@ package org.example;
 import org.example.array.ArrayClass;
 import org.example.exercices.Exo1;
 import org.example.exercices.Exo2;
+import org.example.exercices.ExoTableau;
 import org.example.operator.Operator;
 import org.example.string.ChaineCaractere;
 import org.example.structure.Structure;
@@ -33,7 +34,8 @@ public class Main {
        // Exo2.solutionExo10();
         //ChaineCaractere.getFormat();
        // ArrayClass.getArray();
-        ArrayClass.getDoubleTab();
+       // ArrayClass.getDoubleTab();
+        ExoTableau.askLong();
 
     }
 }
