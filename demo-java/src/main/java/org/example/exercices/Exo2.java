@@ -144,9 +144,30 @@ public class Exo2 {
             System.out.printf("Vous devez payer %s %s pour vos %d photocopie(s)", double_decimal.format(price), unites, nombre);
     }
 
-    public static void  solution8Bis(){
-        System.out.println("Donnez moi un nombre entre 1 et 3 : ");
-        //Scanner sc = new
+    public static void solutionExo11() {
+        Integer nombre6 = 0;
+        Integer resultat = 0;
+        System.out.println("Donnez moi le nombre de depart?");
+        Scanner s2 = new Scanner(System.in);
+        nombre6 = s2.nextInt();
+        System.out.println("Table de multiplication" + " " + nombre6);
+        for (int i = 1; i <= 10; i++) {
+            resultat = nombre6 * i;
+            System.out.println(nombre6 + " " + "X" + " " + i + " " + "=" + " " + resultat);
+        }
+    }
+
+    public static void solutionExo12() {
+        Integer somme = 0;
+        Integer nombre7 = 0;
+        System.out.println("Donnez moi le nombre de depart?");
+        Scanner s3 = new Scanner(System.in);
+        nombre7 = s3.nextInt();
+        for (int i = 0; i <= nombre7; i++) {
+            somme = somme + i;
+        }
+
+        System.out.println("Somme =" + " " + somme);
     }
 
 
