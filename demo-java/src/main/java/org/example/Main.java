@@ -1,43 +1,30 @@
 package org.example;
 
-import org.example.array.ArrayClass;
-import org.example.exercices.Exo1;
-import org.example.exercices.Exo2;
-import org.example.exercices.ExoTableau;
-import org.example.exercices.ExoTableau2;
-import org.example.operator.Operator;
-import org.example.string.ChaineCaractere;
-import org.example.structure.Structure;
-import org.example.structure.Structure2;
-import org.example.variable.Variable;
+import org.example.poo.exempleSimple.Phone;
+import org.example.poo.exempleSimple.Product;
+import org.example.poo.statique.Demo;
 
 public class Main {
     public static void main(String[] args) {
 
-        // Variable.getVariable();
-        //  Operator.getOperators();
-        // Operator.getExpressionType();
-        // Operator.getOperationAndComparasionType();
-        //Operator.demoSystem();
-        //Exo1.solutionExo1();
-        //Exo1.solutionExo2();
+        /*Product p = new Product();
+        Product p1 = new Product(12,"maison");
+
+        System.out.println("produit p " + p);
+        System.out.println("produit p1 " + p1);
+
+        p.setId(15);
+        p.setName("Voiture");
+
+        System.out.println("produit p " + p);
+
+        Phone phone = new Phone(14,"Iphone10",540);
+
+        phone.quiSuisje();*/
+
+        Demo.demo();
 
 
-       //Structure.getIfElse();
-        //Structure.getIfElseIfElse();
-        //Structure.getSwitch();
-       // Structure2.getBoucleFor();
-       // Structure2.getBreakAndContinue();
-
-      //  Exo1.getPhotocopiePrice();
-       // Exo2.getArray();
-      //  Exo2.solutionExo8();
-       // Exo2.solutionExo10();
-        //ChaineCaractere.getFormat();
-       // ArrayClass.getArray();
-       // ArrayClass.getDoubleTab();
-       // ExoTableau.askLong();
-        ExoTableau2.verificationCroissantTab();
 
     }
 }
