@@ -2,7 +2,7 @@ package org.example.poo.polyInterface;
 
 public abstract class Engine {
 
-    protected static int count;
+    protected static int count = 0;
     protected int id;
 
     protected int nbreRoue;
@@ -12,6 +12,10 @@ public abstract class Engine {
     {
         ++count;
     }
+
+
+    abstract void demo();
+
 
     public int getId() {
         return id;

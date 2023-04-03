@@ -2,7 +2,9 @@ package org.example;
 
 import org.example.poo.exempleSimple.Phone;
 import org.example.poo.exempleSimple.Product;
-import org.example.poo.statique.Demo;
+import org.example.poo.polyInterface.Demo;
+import org.example.poo.polyInterface.Engine;
+import org.example.poo.polyInterface.Demo.*;
 
 public class Main {
     public static void main(String[] args) {
@@ -22,7 +24,10 @@ public class Main {
 
         phone.quiSuisje();*/
 
-        Demo.demo();
+       // Demo.demo();
+        Demo.main();
+
+
 
 
 
