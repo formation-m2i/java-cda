@@ -4,6 +4,7 @@ import org.example.array.ArrayClass;
 import org.example.exercices.Exo1;
 import org.example.exercices.Exo2;
 import org.example.exercices.ExoTableau;
+import org.example.exercices.ExoTableau2;
 import org.example.operator.Operator;
 import org.example.string.ChaineCaractere;
 import org.example.structure.Structure;
@@ -35,7 +36,8 @@ public class Main {
         //ChaineCaractere.getFormat();
        // ArrayClass.getArray();
        // ArrayClass.getDoubleTab();
-        ExoTableau.askLong();
+       // ExoTableau.askLong();
+        ExoTableau2.verificationCroissantTab();
 
     }
 }
