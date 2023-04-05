@@ -18,31 +18,24 @@ public class Demo {
         petrolCar.setCouleur("red");
         petrolCar.setNbreRoue(4);
 
-        Engine[] engines = {electricCar,motorCycle,petrolCar};
+        Engine[] engines = {electricCar, motorCycle, petrolCar};
 
 
-        for (Engine engine:engines) {
+        for (Engine engine : engines) {
 
-            if(engine instanceof ElectricCar){
+            if (engine instanceof ElectricCar) {
                 ((ElectricCar) engine).drive();
             }
-            if(engine instanceof MotorCycle){
-               ((MotorCycle) engine).drive();
+            if (engine instanceof MotorCycle) {
+                ((MotorCycle) engine).drive();
             }
-            if(engine instanceof PetrolCar){
+            if (engine instanceof PetrolCar) {
                 System.out.println("id petrolCar " + engine.getId());
             }
         }
 
-        Vehicle[] vehicles = {electricCar,motorCycle,petrolCar};
-}
-
-
-
+        Vehicle[] vehicles = {electricCar, motorCycle};
     }
-
-
-
 
 
 }

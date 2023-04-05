@@ -1,10 +1,12 @@
 package org.example;
 
+import org.example.enums.DemoEnum;
 import org.example.poo.exempleSimple.Phone;
 import org.example.poo.exempleSimple.Product;
-import org.example.poo.polyInterface.Demo;
+//import org.example.poo.polyInterface.Demo;
 import org.example.poo.polyInterface.Engine;
 import org.example.poo.polyInterface.Demo.*;
+import org.example.exercices.poo.salarieCommerciale.*;
 
 public class Main {
     public static void main(String[] args) {
@@ -25,7 +27,15 @@ public class Main {
         phone.quiSuisje();*/
 
        // Demo.demo();
-        Demo.main();
+        //Demo.main();
+
+        //Demo demo = new Demo();
+        //demo.run();
+        DemoEnum.main();
+
+
+
+
 
 
 
