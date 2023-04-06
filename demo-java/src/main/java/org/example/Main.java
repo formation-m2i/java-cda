@@ -1,6 +1,7 @@
 package org.example;
 
 import org.example.enums.DemoEnum;
+import org.example.exercices.book.TestBook;
 import org.example.exercices.enums.TestMessage;
 import org.example.poo.exempleSimple.Phone;
 import org.example.poo.exempleSimple.Product;
@@ -35,13 +36,15 @@ public class Main {
         //demo.proposition();
         //DemoEnum.main();
         //TestMessage.askMessage();
-        OuterClass outerClass = new OuterClass();
+        /*OuterClass outerClass = new OuterClass();
 
         OuterClass.InnerClass inner = outerClass.new InnerClass();
         inner.afficheMessage();
 
         OuterClass.AutreClassInner autreClassInner = new OuterClass.AutreClassInner();
-        autreClassInner.afficheMessage();
+        autreClassInner.afficheMessage();*/
+
+        TestBook.main();
 
 
 
