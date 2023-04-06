@@ -24,20 +24,13 @@ public class Demo implements Methode {
 
 
 
-    @Override
-    public void run() {
 
+    public void proposition() {
         listeSalaries.add(salarie);
         listeSalaries.add(salarie1);
         listeSalaries.add(salarie2);
         listeSalaries.add(com1);
         listeSalaries.add(com);
-
-        proposition();
-    }
-
-    public void proposition() {
-
         Scanner sc = new Scanner(System.in);
         System.out.println("==== Gestion des Employés ====");
         System.out.println();
@@ -95,7 +88,7 @@ public class Demo implements Methode {
 
 
         }
-        sc.close();
+
 
     }
 
@@ -112,6 +105,7 @@ public class Demo implements Methode {
         }
 
         String answer = sc.next();
+
 
         switch (answer) {
             case "1":
@@ -136,7 +130,7 @@ public class Demo implements Methode {
 
         }
         proposition();
-        sc.close();
+
 
     }
 
@@ -144,7 +138,7 @@ public class Demo implements Methode {
         Scanner sc = new Scanner(System.in);
         System.out.println("Merci de saisir le nom");
         name = sc.nextLine();
-        sc.nextLine();
+      //  sc.nextLine();
         System.out.println("Merci de saisir le matricule");
         String matricule = sc.next();
 

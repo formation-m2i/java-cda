@@ -1,9 +1,11 @@
 package org.example;
 
 import org.example.enums.DemoEnum;
+import org.example.exercices.enums.TestMessage;
 import org.example.poo.exempleSimple.Phone;
 import org.example.poo.exempleSimple.Product;
 //import org.example.poo.polyInterface.Demo;
+import org.example.poo.inner.OuterClass;
 import org.example.poo.polyInterface.Engine;
 import org.example.poo.polyInterface.Demo.*;
 import org.example.exercices.poo.salarieCommerciale.*;
@@ -30,9 +32,16 @@ public class Main {
         //Demo.main();
 
         //Demo demo = new Demo();
-        //demo.run();
-        DemoEnum.main();
+        //demo.proposition();
+        //DemoEnum.main();
+        //TestMessage.askMessage();
+        OuterClass outerClass = new OuterClass();
 
+        OuterClass.InnerClass inner = outerClass.new InnerClass();
+        inner.afficheMessage();
+
+        OuterClass.AutreClassInner autreClassInner = new OuterClass.AutreClassInner();
+        autreClassInner.afficheMessage();
 
 
 
