@@ -1,6 +1,9 @@
 package org.example.collections;
 
 import org.example.collections.entity.RandomPerson;
+import org.example.collections.enums.Order;
+import org.example.collections.tools.PersoRandomComparator;
+
 import static org.example.collections.entity.RandomPerson.affichePerson;
 
 import java.util.ArrayList;
@@ -103,9 +106,16 @@ public class ListDemo {
 
         affichePerson(listeDemo3);
 
+        trieOrderRandomPerson(Order.FIRSTNAME, listeDemo);
 
     }
 
+
+    public static void trieOrderRandomPerson(Order order, List<RandomPerson> liste){
+        PersoRandomComparator persoRandomComparator = new PersoRandomComparator();
+        persoRandomComparator.setOrder(order);
+        Collections.sort(liste, persoRandomComparator);
+    }
 
 
 
