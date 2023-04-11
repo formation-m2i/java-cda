@@ -1,5 +1,6 @@
 package org.example;
 
+import org.example.collections.LinkedListDemo;
 import org.example.collections.ListDemo;
 import org.example.enums.DemoEnum;
 import org.example.exercices.book.TestBook;
@@ -50,7 +51,8 @@ public class Main {
 
       //  IHM.main();
 
-        ListDemo.test();
+       // ListDemo.test();
+        LinkedListDemo.main();
 
 
 
