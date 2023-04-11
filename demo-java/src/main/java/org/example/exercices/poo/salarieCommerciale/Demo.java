@@ -66,7 +66,7 @@ public class Demo implements Methode {
                 System.out.println();
                 System.out.println("Merci de saisir le nom : ");
 
-                sc.nextLine();
+               // sc.nextLine();
                 searchName = sc.nextLine();
 
                 for (Salarie s : listeSalaries) {

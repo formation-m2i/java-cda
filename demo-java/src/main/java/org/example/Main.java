@@ -1,8 +1,10 @@
 package org.example;
 
+import org.example.collections.ListDemo;
 import org.example.enums.DemoEnum;
 import org.example.exercices.book.TestBook;
 import org.example.exercices.enums.TestMessage;
+import org.example.exercices.hotel.IHM;
 import org.example.poo.exempleSimple.Phone;
 import org.example.poo.exempleSimple.Product;
 //import org.example.poo.polyInterface.Demo;
@@ -32,8 +34,8 @@ public class Main {
        // Demo.demo();
         //Demo.main();
 
-        //Demo demo = new Demo();
-        //demo.proposition();
+       // Demo demo = new Demo();
+       // demo.proposition();
         //DemoEnum.main();
         //TestMessage.askMessage();
         /*OuterClass outerClass = new OuterClass();
@@ -44,7 +46,11 @@ public class Main {
         OuterClass.AutreClassInner autreClassInner = new OuterClass.AutreClassInner();
         autreClassInner.afficheMessage();*/
 
-        TestBook.main();
+        //TestBook.main();
+
+      //  IHM.main();
+
+        ListDemo.test();
 
 
 
