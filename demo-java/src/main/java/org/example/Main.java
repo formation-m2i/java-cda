@@ -1,5 +1,7 @@
 package org.example;
 
+import org.example.collections.map.MapDemo;
+import org.example.collections.set.SetDemo;
 import org.example.exercices.collections.exercice2.DemoCercle;
 //import org.example.poo.polyInterface.Demo;
 
@@ -46,7 +48,10 @@ public class Main {
 
       //  ArrayTab.main();
 
-        DemoCercle.main();
+       // DemoCercle.main();
+       // SetDemo.main();
+
+        MapDemo.main();
 
 
 
