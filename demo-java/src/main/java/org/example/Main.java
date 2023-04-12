@@ -7,6 +7,8 @@ import org.example.exceptions.DemoExceptionImbrique;
 import org.example.exceptions.DemoThrows;
 import org.example.exceptions.exceptionPerso.CheckMyAge;
 import org.example.exercices.collections.exercice2.DemoCercle;
+import org.example.streams.Demo1;
+import org.example.streams.Demo2;
 
 import java.io.IOException;
 //import org.example.poo.polyInterface.Demo;
@@ -60,10 +62,11 @@ public class Main {
        // MapDemo.main();
 
        // DemoException.main();
-        DemoExceptionImbrique.main2();
+     //   DemoExceptionImbrique.main2();
        // CheckMyAge.main();
 
-
+       // Demo1.main();
+        Demo2.main();
 
 
 
