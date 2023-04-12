@@ -1,20 +1,8 @@
 package org.example;
 
-import org.example.collections.LinkedListDemo;
-import org.example.collections.ListDemo;
-import org.example.enums.DemoEnum;
-import org.example.exercices.book.TestBook;
-import org.example.exercices.collections.exercice1.ArrayTab;
-import org.example.exercices.collections.exercice2.tools.DemoCercle;
-import org.example.exercices.enums.TestMessage;
-import org.example.exercices.hotel.IHM;
-import org.example.poo.exempleSimple.Phone;
-import org.example.poo.exempleSimple.Product;
+import org.example.exercices.collections.exercice2.DemoCercle;
 //import org.example.poo.polyInterface.Demo;
-import org.example.poo.inner.OuterClass;
-import org.example.poo.polyInterface.Engine;
-import org.example.poo.polyInterface.Demo.*;
-import org.example.exercices.poo.salarieCommerciale.*;
+
 
 public class Main {
     public static void main(String[] args) {

@@ -1,4 +1,4 @@
-package org.example.exercices.collections.exercice2.tools;
+package org.example.exercices.collections.exercice2;
 
 import java.util.ArrayList;
 import java.util.Collections;
