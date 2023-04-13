@@ -1,5 +1,7 @@
 package org.example.exercices.book;
 
+import java.util.Arrays;
+
 public class BookService {
 
     public Book[] filterBooksByAuthor(Author author, Book[] books) {
@@ -7,7 +9,7 @@ public class BookService {
             return new Book[0];
         }
 
-        int matchBooksAmount = 0;
+       /* int matchBooksAmount = 0;
         for (Book book : books) {
             for (Author autor : book.getAuthors()) {
                 if (autor.equals(author)) {
@@ -27,7 +29,13 @@ public class BookService {
 
         }
 
+        return filteredBooks;*/
+        Book[] filteredBooks = Arrays.stream(books)
+                .filter(book -> Arrays.stream(book.getAuthors()).anyMatch(autor -> autor.equals(author)))
+                .toArray(Book[]::new);
+
         return filteredBooks;
+
     }
 
     public Book[] filterBooksByPublisher(Publisher publisher, Book[] books) {
@@ -35,7 +43,7 @@ public class BookService {
             return new Book[0];
         }
 
-        int matchBooksAmount = 0;
+       /* int matchBooksAmount = 0;
         for (Book book : books) {
             if (book.getPublisher().equals(publisher)) {
                 matchBooksAmount++;
@@ -50,6 +58,11 @@ public class BookService {
             }
         }
 
+        return filteredBooks;*/
+
+        Book[] filteredBooks = Arrays.stream(books)
+                .filter(book -> book.getPublisher().equals(publisher))
+                .toArray(Book[]::new);
         return filteredBooks;
     }
 
@@ -58,7 +71,7 @@ public class BookService {
             return new Book[0];
         }
 
-        int matchBooksAmount = 0;
+     /*   int matchBooksAmount = 0;
         for (Book book : books) {
             if (book.getPublishingYear() >= yearFromInclusively) {
                 matchBooksAmount++;
@@ -73,6 +86,13 @@ public class BookService {
             }
         }
 
+        return filteredBooks;
+    }*/
+
+
+        Book[] filteredBooks = Arrays.stream(books)
+                .filter(book -> book.getPublishingYear() >= yearFromInclusively)
+                .toArray(Book[]::new);
         return filteredBooks;
     }
 }
