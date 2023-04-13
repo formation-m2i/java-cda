@@ -2,6 +2,9 @@ package org.example;
 
 import org.example.collections.map.MapDemo;
 import org.example.collections.set.SetDemo;
+import org.example.designPattern.adapter.DemoAdapter;
+import org.example.designPattern.bridge.DemoBridge;
+import org.example.designPattern.observer.ObserverDemo;
 import org.example.exceptions.DemoException;
 import org.example.exceptions.DemoExceptionImbrique;
 import org.example.exceptions.DemoThrows;
@@ -66,7 +69,13 @@ public class Main {
        // CheckMyAge.main();
 
        // Demo1.main();
-        Demo2.main();
+       // Demo2.main();
+
+      //  DemoAdapter.main();
+
+      //  DemoBridge.main();
+
+        ObserverDemo.main();
 
 
 
